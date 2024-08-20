@@ -40,7 +40,7 @@ nav ul li a {
 
 .search-box {
     border: 1px solid rgba(112, 58, 7, 0.74);
-    width: 18%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
@@ -61,12 +61,23 @@ input {
 }
 
 input:focus {
-    box-shadow: 0 0 3px 2px  rgba(201, 86, 4, 0.486);
+    box-shadow: 0 0 3px 2px  rgba(116, 49, 1, 0.336);
 }
 
 .search-box a {
-    background-color: rgb(129, 60, 10);
     width: 17%;
     text-decoration: none;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box a:hover {
+    background-color: rgba(112, 58, 7, 0.918);
+}
+
+.search-box a i {
+    color: #fff;
+    font-size: 20px;
 }
