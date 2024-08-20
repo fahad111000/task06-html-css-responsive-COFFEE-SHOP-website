@@ -60,9 +60,9 @@ nav ul li a:hover {
 }
 
 
-
 input {
-    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     width: 90%;
     outline: none;
     border: none;
