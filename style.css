@@ -11,8 +11,14 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    border-bottom: 1px solid rgba(165, 133, 103, 0.918);
+    /* border-bottom: 1px solid rgba(165, 133, 103, 0.918); */
     padding: 50px 0 ;
+    transition: 0.3s;
+}
+
+header:hover {
+    box-shadow: 1px 1px 5px 1px rgba(61, 25, 1, 0.445);
+    
 }
 
 /* LOGO */
