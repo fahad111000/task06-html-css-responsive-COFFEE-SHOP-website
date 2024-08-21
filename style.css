@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    /* border-bottom: 1px solid rgba(165, 133, 103, 0.918); */
+    border-bottom: 1px solid rgba(141, 73, 9, 0.918);
     padding: 50px 0 ;
     transition: 0.3s;
 }
