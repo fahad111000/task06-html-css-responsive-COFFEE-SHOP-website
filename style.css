@@ -189,20 +189,36 @@ input:focus {
 
 .coffe {
     font-family: sans-serif;
-    /* border: 2px solid red; */
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    cursor: pointer;
     margin-bottom: 50px;
+}
+
+
+.coffe-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.coffe-content:hover {
+    transition: 0.2s ease;
+    box-shadow: 0 0 13px 3px rgba(51, 49, 49, 0.11);
+
 }
 
 .coffe h1 {
     color: hsl(13, 50%, 27%);
-    padding: 5px  3px;
+    padding: 5px 3px;
     font-size: 18px;
     border-bottom: 1px solid hsl(13, 50%, 27%);
 }
@@ -211,7 +227,8 @@ input:focus {
     width: 100px;
 }
 
-.coffe span, p {
+.coffe span,
+p {
     color: hsl(13, 50%, 27%);
     font-size: 15px;
     padding: 5px 0;
