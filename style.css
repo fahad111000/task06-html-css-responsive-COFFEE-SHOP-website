@@ -119,6 +119,7 @@ input:focus {
 .container {
     width: 90%;
     margin: 0 auto;
+    border: 2px solid red;
 
 }
 
@@ -169,7 +170,7 @@ input:focus {
 
 .cards-section {
     border: 2px solid orange;
-
+    padding: 50px 0;
 }
 
 
@@ -178,9 +179,12 @@ input:focus {
     color: rgb(73, 31, 2);
     font-size: 50px;
     text-align: center;
-    border: 2px solid red;
 }
 
+
+.main-card {
+    border: 2px solid green;
+}
 
 
 
