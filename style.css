@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* ______________________Header_______________________ */
 
 header {
@@ -43,29 +47,44 @@ nav ul li a {
     text-decoration: none;
     font-size: 15px;
     color: #000;
-    font-family: sans-serif;
     transition: 0.3s ease-in-out;
     text-transform: uppercase;
+    position: relative;
 }
+
+nav ul li a::before {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: hsl(13, 50%, 27%);
+    position: absolute;
+    bottom: -10px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+    font-weight: 600;
+}
+
+
 
 .active {
-    color: rgb(129, 60, 10);
+    font-weight: 600;
+    color: hsl(13, 50%, 27%);
+    
 }
 
-nav ul li a:hover {
-    color: rgba(112, 58, 7, 0.918);
-}
 
 
 /* Search Box */
 
 .search-box {
-    border: 1px solid rgba(112, 58, 7, 0.74);
+    border: 1px solid hsl(13, 50%, 27%);
     width: 20%;
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
-    background-color: rgb(129, 60, 10);
 }
 
 
@@ -84,6 +103,7 @@ input {
 
 input:focus {
     box-shadow: 0 0 3px 2px rgba(116, 49, 1, 0.336);
+
 }
 
 .search-box a {
@@ -93,10 +113,12 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: hsl(13, 50%, 27%);
 }
 
 .search-box a:hover {
-    background-color: rgba(112, 58, 7, 0.918);
+    border: 1px solid;
+
 }
 
 .search-box a i {
@@ -110,7 +132,7 @@ input:focus {
 
 .banner-section {
     background-image: url('./images/cup.png');
-    height: 100vh;
+    /* height: 100vh; */
     padding: 100px 0;
     background-repeat: no-repeat;
     background-position: 800px 50px;
@@ -129,12 +151,10 @@ input:focus {
     padding: 20px 30px;
     max-width: 700px;
     margin: 10px 60px;
-    font-family: sans-serif;
-
+    color: hsl(13, 50%, 27%);
 }
 
 .content h1 {
-    color: rgb(129, 60, 10);
     font-size: 44px;
     width: 400px;
     padding: 10px 0;
@@ -153,12 +173,12 @@ input:focus {
     padding: 10px;
     width: 18%;
     cursor: pointer;
-    border: 2px solid rgb(129, 60, 10);
+    border: 2px solid hsl(13, 50%, 27%);
     border-radius: 2px;
 }
 
 .content .btn:first-child {
-    background-color: rgb(129, 60, 10);
+    background-color: hsl(13, 50%, 27%);
     color: #fff;
 }
 
@@ -167,16 +187,11 @@ input:focus {
     margin-left: 30px;
 }
 
-/* ______________________COFFE___________________________ */
+/* ______________________COFFE SECTION___________________________ */
 
 .coffe-section {
     padding: 100px 0;
-    border: 2px solid black;
-}
-
-.coffes-wrapper .container {
-    border: 2px solid black;
-    width: 100%;
+    /* border: 2px solid black; */
 }
 
 .coffes-wrapper {
@@ -188,7 +203,6 @@ input:focus {
 }
 
 .coffe {
-    font-family: sans-serif;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -204,15 +218,15 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-    padding: 20px;
+    width: 65%;
+    padding: 20px 0;
     border-radius: 5px;
 
 }
 
 .coffe-content:hover {
     transition: 0.2s ease;
-    box-shadow: 0 0 13px 3px rgba(51, 49, 49, 0.11);
+    box-shadow: 0 0 13px 3px hsla(13, 50%, 27%, 0.116);
 
 }
 
@@ -235,21 +249,29 @@ p {
 }
 
 
-/* _______________________Cards Section________________________ */
+/* _______________________COFFE PRODUCTS________________________ */
 
 .cards-section {
-    border: 2px solid orange;
     padding: 50px 0;
 }
 
 
 .main-heading {
-    font-family: sans-serif;
     color: rgb(73, 31, 2);
     font-size: 40px;
     text-align: center;
+    position: relative;
 }
 
+.main-heading::before {
+    content: ' ';
+    width: 6%;
+    height: 3px;
+    background-color: hsl(13, 50%, 27%);
+    position: absolute;
+    bottom: -12px;
+    left: 47%;
+}
 
 .main-card {
     display: flex;
@@ -263,6 +285,8 @@ p {
     width: 20%;
     border-radius: 10px;
     background-color: hsl(13, 50%, 27%);
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .card-background {
@@ -275,7 +299,13 @@ p {
     border-radius: 5px;
     position: relative;
     height: 150px;
+    transition: 0.3s;
 }
+
+/* card image Animation */
+/* .card-background:hover {
+    transform: scale(1.2);
+} */
 
 .card-background img {
     width: 95px;
@@ -285,7 +315,6 @@ p {
 }
 
 .card-content {
-    font-family: sans-serif;
     padding: 10px 5px;
     color: #fff;
 }
