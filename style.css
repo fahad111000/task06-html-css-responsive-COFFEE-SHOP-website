@@ -167,6 +167,48 @@ input:focus {
     margin-left: 30px;
 }
 
+/* ______________________COFFE___________________________ */
+
+.coffe-section {
+    padding: 50px 0;
+    border: 2px solid black;
+}
+
+.coffes-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.coffe {
+    font-family: sans-serif;
+    border: 2px solid red;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.coffe h1 {
+    color: hsl(13, 50%, 27%);
+    padding: 5px  3px;
+    font-size: 18px;
+    border-bottom: 1px solid hsl(13, 50%, 27%);
+}
+
+.coffe img {
+    width: 100px;
+}
+
+.coffe span, p {
+    color: hsl(13, 50%, 27%);
+    font-size: 15px;
+    padding: 5px 0;
+}
+
 
 /* _______________________Cards Section________________________ */
 
