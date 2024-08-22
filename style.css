@@ -165,9 +165,21 @@ input:focus {
 }
 
 
+/* _______________________Cards Section________________________ */
+
+.cards-section {
+    border: 2px solid orange;
+
+}
 
 
-
+.main-heading {
+    font-family: sans-serif;
+    color: rgb(73, 31, 2);
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid red;
+}
 
 
 
