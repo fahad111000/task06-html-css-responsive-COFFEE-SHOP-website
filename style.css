@@ -113,9 +113,9 @@ input:focus {
     height: 100vh;
     padding: 100px 0;
     background-repeat: no-repeat;
-    /* background-position: right, -200px; */
     background-position: 800px 50px;
     background-size: 550px;
+
 }
 
 .container {
@@ -211,9 +211,10 @@ input:focus {
 }
 
 .card-background img {
-    width: 90px;
+    width: 95px;
     position: absolute;
-    left: 25%;
+    left: 29%;
+    top: 10%;
 }
 
 .card-content {
@@ -231,7 +232,8 @@ input:focus {
 
 .card-content p {
     font-size: 12px;
-    color: #fff;
+    color: #fffcfcde;
+    line-height: 17px;
 }
 
 /* ____Card Rating____ */
@@ -256,7 +258,7 @@ input:focus {
 
 
 .card-rating .card-button button {
-    font-size: 10px;
+    font-size: 12px;
     color: #fff;
     padding: 8px 0;
     width: 90px;
