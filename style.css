@@ -170,26 +170,34 @@ input:focus {
 /* ______________________COFFE___________________________ */
 
 .coffe-section {
-    padding: 50px 0;
+    padding: 100px 0;
     border: 2px solid black;
+}
+
+.coffes-wrapper .container {
+    border: 2px solid black;
+    width: 100%;
 }
 
 .coffes-wrapper {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .coffe {
     font-family: sans-serif;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px 0;
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .coffe h1 {
