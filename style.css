@@ -15,15 +15,15 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 70px;
-    /* border-bottom: 1px solid rgba(141, 73, 9, 0.918); */
+    border-bottom: 1px solid rgba(141, 73, 9, 0.918);
     padding: 50px 0;
     transition: 0.3s;
 }
 
-header:hover {
+/* header:hover {
     box-shadow: 1px 1px 5px 1px rgba(61, 25, 1, 0.445);
 
-}
+} */
 
 /* LOGO */
 
@@ -274,6 +274,7 @@ p {
 }
 
 .main-card {
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -287,6 +288,7 @@ p {
     background-color: hsl(13, 50%, 27%);
     cursor: pointer;
     overflow: hidden;
+    transition: 0.3s;
 }
 
 .card-background {
@@ -299,13 +301,12 @@ p {
     border-radius: 5px;
     position: relative;
     height: 150px;
-    transition: 0.3s;
 }
 
 /* card image Animation */
-/* .card-background:hover {
-    transform: scale(1.2);
-} */
+.card:hover {
+    transform: translateY(-15px);
+}
 
 .card-background img {
     width: 95px;
