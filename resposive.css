@@ -15,7 +15,16 @@
 
     .coffe-content {
         width: 72%;
+    }
 
+    .main-heading::before {
+        content: ' ';
+        width: 8%;
+        height: 3px;
+        background-color: hsl(13, 50%, 27%);
+        position: absolute;
+        bottom: -12px;
+        left: 47%;
     }
 
     /* _______________________COFFE PRODUCTS________________________ */
@@ -152,6 +161,7 @@
         width: 100%;
     }
 
+
     .coffe {
         width: 30%;
         margin: 30px 0 0;
@@ -187,8 +197,13 @@
 
 
     .main-heading::before {
-        width: 26%;
-        left: 37%;
+        content: ' ';
+        width: 8%;
+        height: 3px;
+        background-color: hsl(13, 50%, 27%);
+        position: absolute;
+        bottom: -12px;
+        left: 47%;
     }
 
     .main-card {
@@ -201,18 +216,15 @@
 
     .card {
         padding: 10px;
-        width: 40%;
+        width: 35%;
         margin-bottom: 50px;
     }
 
-    .card-background {
-        height: 150px;
-    }
 
     .card-background img {
-        width: 120px;
-        left: 28%;
-        top: 1%;
+        width: 150px;
+        left: 26%;
+        top: -10px;
     }
 
 
@@ -298,6 +310,47 @@
 
 }
 
+/* Tablet Medium */
+@media (500px <=width <=768px) {
+
+    /* _______________________COFFE PRODUCTS________________________ */
+
+    .cards-section {
+        padding: 0;
+    }
+
+
+
+    .main-heading::before {
+        content: ' ';
+        width: 10% !important;
+        height: 3px;
+        background-color: hsl(13, 50%, 27%);
+        position: absolute;
+        bottom: -12px;
+        left: 45% !important;
+    }
+
+    .card-background {
+        background-position: center;
+        background-size: auto;
+
+    }
+
+
+    .card-background img {
+        width: 100px;
+        left: 25%;
+    }
+
+
+    .card-content p {
+        text-align: left;
+        padding: 3px 0;
+    }
+
+
+}
 
 /* Medium Devices  */
 @media (425px <=width <=768px) {
@@ -305,7 +358,7 @@
         padding: 0;
         flex-direction: column;
         justify-content: left;
-        height: 200px;
+        height: 180px;
     }
 
     /* LOGO */
@@ -424,8 +477,7 @@
 
     .card-background img {
         width: 120px;
-        left: 25%;
-        top: 1%;
+        left: 26%;
     }
 
 
@@ -498,8 +550,9 @@
 }
 
 /* Small Devices */
-@media (320px <=width <=425px) {
+@media (370px <=width <=425px) {
     header {
+
         padding: 0 0;
         flex-direction: column;
         justify-content: center;
@@ -615,9 +668,9 @@
     }
 
     .card-background img {
-        width: 120px;
-        left: 25%;
-        top: 1%;
+        width: 130px;
+        left: 29%;
+        top: 0;
     }
 
 
@@ -657,6 +710,194 @@
         border-bottom: 1px solid grey;
     }
 
+
+    .footer .social-media .icons i {
+        margin-top: 30px;
+    }
+
+    .newsletter {
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer .newsletter input {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .footer .newsletter button {
+        width: 100%;
+        margin: 10px auto;
+
+    }
+
+}
+
+/* Small Devices */
+@media (320px <=width <=370px) {
+    header {
+
+        padding: 0 0;
+        flex-direction: column;
+        justify-content: center;
+        height: 180px;
+    }
+
+    /* LOGO */
+    .logo a img {
+        width: 150px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    /* Search Box */
+    .search-box {
+        display: none;
+    }
+
+    /* _________________Banner Section____________________ */
+
+    .container {
+        width: 100%;
+    }
+
+    .banner-section .content {
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .content p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .content .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .btn {
+        width: 50%;
+    }
+
+    /* ______________________COFFE SECTION___________________________ */
+
+    .coffe-section {
+        padding: 20px 0 0;
+    }
+
+    .coffes-wrapper {
+        width: 100%;
+    }
+
+    .coffe {
+        width: 80%;
+    }
+
+
+    .coffe-content {
+        width: 75%;
+
+    }
+
+
+    .coffe h1 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+
+    .coffe span,
+    p {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    /* _______________________COFFE PRODUCTS________________________ */
+
+    .cards-section {
+        padding: 0;
+    }
+
+    .main-heading {
+        font-size: 30px;
+    }
+
+
+    .main-heading::before {
+        width: 26%;
+        left: 37%;
+    }
+
+    .main-card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+
+    .card-background img {
+        width: 130px;
+        left: 29%;
+        top: 0;
+    }
+
+
+    .card-content p {
+        text-align: left;
+        padding: 3px 0;
+    }
+
+    /* _________________FOOTER___________________ */
+
+
+
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 120px;
+    }
+
+    .footer .logo {
+        margin: 0;
+    }
+
+
+    .footer .logo img {
+        width: 200px;
+    }
+
+    .footer ul {
+        gap: 10px;
+        flex-basis: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+
+    .footer ul li a{
+        font-size: 13px;
+    }
 
     .footer .social-media .icons i {
         margin-top: 30px;

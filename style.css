@@ -456,8 +456,9 @@ p {
 
 .sub-footer p {
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     color: #fff;
+    font-size: 13px;
     padding: 10px 0;
     background-color: hsl(13, 50%, 27%);
 }
