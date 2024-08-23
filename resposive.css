@@ -498,7 +498,7 @@
 }
 
 /* Small Devices */
-@media (375px <=width <=425px) {
+@media (320px <=width <=425px) {
     header {
         padding: 0 0;
         flex-direction: column;
