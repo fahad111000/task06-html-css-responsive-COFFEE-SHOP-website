@@ -1,4 +1,3 @@
-
 /* Samll Laptop */
 @media (1024px <=width <=1350px) {
     .banner-section {
@@ -78,7 +77,103 @@
 
 /* Tablet Version */
 
-@media (768px <= width <= 1024px) {
-    
-}
+@media (768px <=width <=1024px) {
 
+    header {
+        padding: 0;
+    }
+
+    /* LOGO */
+    .logo a img {
+        width: 150px;
+    }
+
+    nav ul {
+        gap: 50px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* Search Box */
+    .search-box {
+        display: none;
+    }
+
+    /* _________________Banner Section____________________ */
+
+
+    .banner-section {
+        background-image: none;
+        padding: 100px 0 20px;
+
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .banner-section .content {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        margin: auto;
+        text-align: center;
+        font-size: 40px;
+        width: 600px;
+        padding: 0;
+    }
+
+    .content p {
+        font-size: 20px;
+        width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .content .buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* ______________________COFFE SECTION___________________________ */
+
+    .coffe-section {
+        padding: 80px 0;
+    }
+
+    .coffes-wrapper {
+        margin: 50px 0;
+    }
+    .coffe {
+        width: 30%;
+        margin: 30px 0 0;
+    }
+
+    
+    .coffe-content {
+        width: 95%;
+
+    }
+
+    .coffe h1 {
+        margin-top: 10px;
+        border-bottom: 1px solid hsl(13, 50%, 27%);
+    }
+
+    .coffe img {
+        width: 100px;
+    }
+
+    .coffe span,
+    p {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
+    }
+}
