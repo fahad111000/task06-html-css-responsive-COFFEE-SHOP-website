@@ -365,34 +365,36 @@ p {
 
 /* _________________FOOTER___________________ */
 
+.footer {
+    padding: 50px 0 0;
+    border-top: 1px solid hsl(13, 50%, 27%);
+}
+
+
 .footer .content {
-    border: 2px solid red;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 30px 0;
+    align-items: start;
+    padding: 50px 0;
 }
 
-.footer .logo {
-    /* flex: 1; */
-    border: 2px solid red;
-}
 
 .footer .logo img {
-    width: 150px;
-    border: 2px solid orange;
+    width: 100px;
 }
 
 .footer ul {
-    border: 2px solid red;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
     flex-basis: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid hsl(13, 50%, 27%);
+    border-right: 1px solid hsl(13, 50%, 27%);
 }
 
-.footer ul li {
-    margin: 30px 0;
-}
 
 .footer ul a {
     text-decoration: none;
@@ -400,28 +402,63 @@ p {
 }
 
 
-.footer .social-media-icons a {
+.footer .social-media .icons a {
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
 
 }
 
-.footer .social-media-icons i {
+.footer .social-media {
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .social-media .icons i {
     font-size: 20px;
     color: black;
     padding: 10px;
-    border: 1px solid grey;
-    /* border-radius: 4px; */
+    border: 1px solid hsl(13, 50%, 27%);
 }
 
-.footer .social-media-icons i:hover {
+.footer .social-media .icons i:hover {
     box-shadow: 1px 1px 16px 1px rgb(222, 226, 222);
 }
 
-.sub-footer p{
+
+.footer .newsletter h1 {
+    font-size: 15px;
+    text-align: center;
+    padding: 15px 0;
+    color: hsl(13, 50%, 27%);
+}
+
+.footer .newsletter input {
+    width: 100%;
+    padding: 12px 10px;
+    /* box-shadow: none; */
+    border: 1px solid hsl(13, 50%, 27%);
+    margin: 0 0 20px;
+    letter-spacing: 0;
+    border-radius: 0;
+}
+
+.footer .newsletter button {
+    width: 100%;
+    padding: 14px;
+    background-color: hsl(13, 50%, 27%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sub-footer p {
     text-align: center;
     font-weight: 600;
+    color: #fff;
     padding: 10px 0;
-    background-color: rgba(223, 220, 220, 0.678);
+    background-color: hsl(13, 50%, 27%);
 }
