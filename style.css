@@ -378,9 +378,14 @@ p {
     padding: 50px 0;
 }
 
+.footer .logo {
+    margin: -30px 0;
+}
+
 
 .footer .logo img {
-    width: 100px;
+    width: 150px;
+    /* border: 2px solid black; */
 }
 
 .footer ul {
