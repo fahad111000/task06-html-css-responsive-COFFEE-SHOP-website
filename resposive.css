@@ -1,0 +1,84 @@
+
+/* Samll Laptop */
+@media (1024px <=width <=1350px) {
+    .banner-section {
+        background-position: 600px 50px;
+        background-size: 500px;
+
+    }
+
+    /* ______________________COFFE SECTION___________________________ */
+
+    .coffe-section {
+        padding: 100px 0 30px;
+    }
+
+
+    .coffe-content {
+        width: 72%;
+
+    }
+
+    /* _______________________COFFE PRODUCTS________________________ */
+
+    .cards-section {
+        padding: 50px 0;
+    }
+
+    .card {
+        width: 23%;
+    }
+
+    /* card image Animation */
+    .card:hover {
+        transform: translateY(-15px);
+    }
+
+    .card-background img {
+        width: 95px;
+        position: absolute;
+        left: 29%;
+        top: 10%;
+    }
+
+    .card-rating .card-button button {
+        width: 80px;
+    }
+
+    /* _________________FOOTER___________________ */
+
+    .footer {
+        padding: 50px 0 0;
+        border-top: 1px solid hsl(13, 50%, 27%);
+    }
+
+
+    .footer .content {
+        padding: 50px 0;
+    }
+
+
+    .footer .logo img {
+        width: 150px;
+    }
+
+    .footer ul {
+        flex-basis: 300px;
+    }
+
+
+    .footer ul a {
+        text-decoration: none;
+        color: hsl(13, 50%, 27%);
+    }
+
+
+}
+
+
+/* Tablet Version */
+
+@media (768px <= width <= 1024px) {
+    
+}
+
