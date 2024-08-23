@@ -76,7 +76,6 @@
 
 
 /* Tablet Version */
-
 @media (768px <=width <=1024px) {
 
     header {
@@ -150,6 +149,7 @@
 
     .coffes-wrapper {
         margin: 50px 0;
+        width: 100%;
     }
 
     .coffe {
@@ -192,8 +192,9 @@
     }
 
     .main-card {
+        width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 50px;
     }
@@ -224,16 +225,16 @@
 
     .footer {
         width: 100%;
-        padding: 50px 0 0 ;
+        padding: 50px 0 0;
         border-top: 1px solid hsl(13, 50%, 27%);
     }
-    
-    
+
+
     .footer .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding:  0 0 120px;
+        padding: 0 0 120px;
     }
 
     .footer .logo {
@@ -286,13 +287,232 @@
         width: 60%;
         margin: 0 20%;
     }
-    
+
     .footer .newsletter button {
         width: 60%;
         margin: 10px 20%;
 
     }
 
- 
+
+
+}
+
+
+/* Small Mobile  */
+@media (425px <=width <=768px) {
+    header {
+        padding: 0;
+        flex-direction: column;
+        justify-content: left;
+        height: 200px;
+    }
+
+    /* LOGO */
+    .logo a img {
+        width: 150px;
+    }
+
+    nav ul {
+        gap: 40px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    /* Search Box */
+    .search-box {
+        display: none;
+    }
+
+    /* _________________Banner Section____________________ */
+
+
+    .banner-section {
+        background-image: none;
+        padding: 50px 0;
+
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .banner-section .content {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .content h1 {   
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .content p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .content .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content .btn {
+        width: 30%;
+    }
+
+    /* ______________________COFFE SECTION___________________________ */
+
+    .coffe-section {
+        padding: 30px 0 0;
+    }
+
+    .coffes-wrapper {
+        width: 100%;
+        margin: 50px 0;
+        justify-content: space-around;
+    }
+
+    .coffe {
+        width: 40%;
+    }
+
+
+    .coffe-content {
+        width: 95%;
+
+    }
+
+
+    .coffe h1 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+
+    .coffe span,
+    p {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    /* _______________________COFFE PRODUCTS________________________ */
+
+    .cards-section {
+        padding: 0;
+    }
+
+
+    .main-heading::before {
+        width: 26%;
+        left: 37%;
+    }
+
+    .main-card {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .card {
+        padding: 10px;
+        min-width: 75%;
+        margin-bottom: 50px;
+    }
+
+    .card-background {
+        height: 150px;
+    }
+
+    .card-background img {
+        width: 120px;
+        left: 28%;
+        top: 1%;
+    }
+
+
+    .card-content p {
+        text-align: left;
+        padding: 3px 0;
+    }
+
+    /* _________________FOOTER___________________ */
+
+    .footer {
+        width: 100%;
+        padding: 50px 0 0;
+        border-top: 1px solid hsl(13, 50%, 27%);
+    }
+
+
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 120px;
+    }
+
+    .footer .logo {
+        margin: 0;
+    }
+
+
+    .footer .logo img {
+        width: 200px;
+    }
+
+    .footer ul {
+        gap: 20px;
+        flex-basis: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+
+
+    .footer .social-media {
+        display: flex;
+        height: 220px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer .social-media .icons i {
+        margin-top: 30px;
+    }
+
+    .footer .newsletter h1 {
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    .newsletter {
+        /* border: 2px solid orange; */
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .footer .newsletter input {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    .footer .newsletter button {
+        width: 60%;
+        margin: 10px 20%;
+
+    }
+
+
 
 }
